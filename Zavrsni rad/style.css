@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  /* padding: 13px; */
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #234383;
+}
+.chat-box {
+  width: 30%;
+  margin: 100px auto;
+  padding: 50px;
+  border-radius: 20px;
+  background: #fff;
+}
+.header-box {
+  background-color: #234383;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 20px;
+}
+.naslov {
+  color: #fff;
+}
+
+.members-count,
+.members-list,
+.messages {
+  border: 1px solid #e4e4e4;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.messages {
+  flex-shrink: 1;
+  overflow: auto;
+}
+
+.message {
+  padding: 5px 0;
+}
+.message .member {
+  display: inline-block;
+}
+
+.member {
+  padding-right: 10px;
+  position: relative;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  /* flex-shrink: 0; */
+  width: 100%;
+}
+.message-form-input {
+  flex-grow: 1;
+  border: 1px solid #dfdfdf;
+  padding: 10px 15px;
+  font-size: 16px;
+  /* width: 100%; */
+}
+.message-form-button {
+  margin-top: 40px;
+  padding: 10px;
+  background: #234383;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 30%;
+  /* display: flex; */
+}
+.button-box {
+  display: flex;
+  justify-content: flex-end;
+}
+.message-form-button:hover {
+  cursor: pointer;
+}

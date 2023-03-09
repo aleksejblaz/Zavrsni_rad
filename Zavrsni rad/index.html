@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      type="text/javascript"
+      src="https://cdn.scaledrone.com/scaledrone.min.js"
+    ></script>
+    <!--<script type='text/javascript' src='http://0.0.0.0:8080/scaledrone.js'></script>-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chat-box">
+      <div class="header-box">
+        <h1 class="naslov">Brbljaonica</h1>
+      </div>
+      <div class="members-count">Broj osoba</div>
+      <div class="members-list">Ime osoba</div>
+      <div class="messages"></div>
+      <form class="message-form" onsubmit="return false;">
+        <input
+          class="message-form-input"
+          placeholder="Napiši poruku..."
+          type="text"
+        />
+        <div class="button-box">
+          <input class="message-form-button" value="Pošalji" type="submit" />
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
